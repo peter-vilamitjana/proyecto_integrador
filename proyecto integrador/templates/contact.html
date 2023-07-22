@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JUGUETERIA COSMICA</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="/proyecto integrador/js/main.js" async></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <img
+                    src="/proyecto integrador/images/Logo.png"
+                    class="logo"
+                    alt="logo"
+                />
+                <a href="../index.html" id="navbar__logo">Jugueteria cosmica</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="../index.html" class="navbar__links"> Home </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="about.html" class="navbar__links">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="faq.html" class="navbar__links"> FAQ </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="alta.html" class="button"> Alta </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#" class="button btn-cart-toggle"> 🛒 </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <!-- <div class="form-contact">
+                <header>
+                    <h2>Ingresa tus datos aca</h2>
+                </header>
+                <form action=" " class="contact">
+                    <label for="nombres">Nombres</label>
+                    <input
+                        type="text"
+                        name="nombres"
+                        id="nombres"
+                        minlength="2"
+                        required
+                    />
+                    <label for="email">Correo: </label>
+                    <input type="email" name="email" id="email" required />
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        name="mensaje"
+                        id="mensaje"
+                        required
+                        minlength="20"
+                    ></textarea>
+                    <input type="submit" value="Enviar" id="submitContact" />
+                </form>
+            </div> -->
+
+            <div class="container__contact">
+                <div class="contact__box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Contactanos 📩</h2>
+                        <input type="text" class="field" placeholder="Nombre" />
+                        <input
+                            type="text"
+                            class="field"
+                            placeholder="Apellido"
+                        />
+                        <input
+                            type="text"
+                            class="field"
+                            placeholder="ejemplo@gmail.com"
+                        />
+                        <textarea
+                            class="field"
+                            placeholder="Mensaje"
+                        ></textarea>
+                        <button class="btn-content-form">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Carrito -->
+        <section class="cart-container">
+            <div class="modal-header">
+                <button type="button" class="close-button" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <h2>Carrito de compras</h2>
+            <div class="items">
+                <table>
+                    <caption>
+                        Selecciona el juguete deseado
+                    </caption>
+                    <tr class="table-title">
+                        <th>Cantidad</th>
+                        <th>Juguete</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>Transformes - Hasbro</th>
+                        <th>$5000</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>Lego Starwars</th>
+                        <th>$3000</th>
+                    </tr>
+                </table>
+
+                <input type="submit" value="Comprar" class="cartButton" />
+                <input type="reset" value="Vaciar" class="cartButton" />
+            </div>
+        </section>
+
+        <footer>
+            <img src="../images/Logo.png" class="logo" alt="logo" />
+
+            <div class="contactos">
+                <h3>Contactos</h3>
+                <ul>
+                    <li>(+54) 911 5021-1311</li>
+                    <li>pedrovilamitjana98@gmail.com</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <div class="flex-items">
+                    <div class="flex-items"><p>Redes Sociales:</p></div>
+                </div>
+                <div class="flex-items responsiveItem">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="flex-items responsiveItem">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="flex-items responsiveItem">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="flex-items responsiveItem">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
